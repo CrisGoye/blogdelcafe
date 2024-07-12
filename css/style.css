@@ -8,7 +8,6 @@
     --negro: #000;
 }
 
-
 html{
     box-sizing: border-box;
     font-size: 62.5%;/*1rem - 10px */
@@ -80,24 +79,43 @@ h4{
     margin-top: 5rem;
 }
 
+.logo{
+
+    color: var(--blanco);
+
+}
+.logo__nombre{
+    font-weight: 400;
+    
+}
+
+.logo__bold{
+    font-weight: 700;
+
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+
+}
+
 @media (min-width: 768px){
     .barra{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .logo{
-
-        color: var(--blanco);
-
-    }
-    .logo__nombre{
-        font-weight: 400;
-        
-    }
-
-    .logo__bold{
-        font-weight: 700;
+   
+    .navegacion{
+        display: flex;
+        gap: 2rem;
 
     }
+.header__texto{
+    margin-top: 10rem;
+}
+    
 }
