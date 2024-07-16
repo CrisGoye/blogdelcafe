@@ -1,7 +1,7 @@
-/* Hoja de estilos */
+/* hoja de estilos */
 
 :root{
-    --fuenteencabezado: "PT Sans", sans-serif;
+    --fuenteEncabezado: "PT Sans", sans-serif;
     --fuenteParrafos: "Open Sans", sans-serif;
     --primario: #784D3C;
     --blanco: #FFF;
@@ -9,9 +9,10 @@
     --gris: #e1e1e1;
 }
 
+
 html{
     box-sizing: border-box;
-    font-size: 62.5%;/*1rem - 10px */
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 *, *:before, *:after {
@@ -26,7 +27,7 @@ body{
 
 .contenedor{
     width: min(90%, 120rem);
-    margin: 0 top;
+    margin: 0 auto;
 }
 
 a{
@@ -34,7 +35,7 @@ a{
 }
 
 h1, h2, h3, h4{
-    font-family: var(--fuenteencabezado);
+    font-family: var(--fuenteEncabezado);
 }
 
 h1{
@@ -42,22 +43,22 @@ h1{
 }
 
 h2{
-  font-size: 4rem;
+    font-size: 4rem;
 }
 
 h3{
-  font-size: 3.2rem;
+    font-size: 3.2rem;
 }
 
 h4{
-   font-size: 2.8rem;
+    font-size: 2.8rem;
 }
 
 img{
     max-width: 100%;
 }
 
-/*utilidades */
+/* estilos utilitarios para reutilizar */
 .no-margin{
     margin: 0;
 }
@@ -69,7 +70,7 @@ img{
     text-align: center;
 }
 
-/*estilo del header */
+/* estilo del header */
 .header{
     background-image: url(../images/banner.jpg);
     height: 60rem;
@@ -81,22 +82,19 @@ img{
 .header__texto{
     text-align: center;
     color: var(--blanco);
-    margin-top: 5rem;
+    margin-top:5rem;
 }
 
 .logo{
-
     color: var(--blanco);
-
 }
+
 .logo__nombre{
     font-weight: 400;
-    
 }
 
 .logo__bold{
     font-weight: 700;
-
 }
 
 .navegacion__enlace{
@@ -104,13 +102,15 @@ img{
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
-
+  
 }
-/*estilos para el blog*/
+
+/* estilos para el blog */
 .entrada{
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
 }
+
 .entrada:last-of-type{
     border: none;
     margin-bottom: 0;
@@ -118,7 +118,7 @@ img{
 
 .boton{
     display: block;
-    font-family: var(--fuenteencabezado);
+    font-family: var(--fuenteEncabezado);
     color: var(--blanco);
     text-align: center;
     font-size: 1.8rem;
@@ -138,8 +138,7 @@ img{
 
 }
 
-/*estilos para el sidebar*/
-
+/* estilos para el sidebar */
 .cursos{
     list-style: none;
 }
@@ -150,34 +149,31 @@ img{
 }
 
 .widget-curso:last-of-type{
-    border: none;
+    border:none;
     margin-bottom: 0;
-
 }
 
 .widget-curso__label{
-    font-family: var(--fuenteencabezado);
+    font-family: var(--fuenteEncabezado);
     font-weight: bold;
-
 }
 
 .widget-curso__info{
     font-weight: normal;
-
 }
-.widget-curso__label,.widget-curso__info{
+
+.widget-curso__label, .widget-curso__info{
     font-size: 2rem;
- 
 }
-/*estilos pie de pagina */
 
+/* estilos para el pie de pagina */
 .footer{
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
-/*estilos pagina contacto*/
 
+/* estilos pagina contacto */
 .contacto-bg{
     background-image: url(../images/contacto.jpg);
     height: 40rem;
@@ -193,17 +189,18 @@ img{
 }
 
 .campo{
-   display: flex;
-   margin-bottom: 2rem;
+    display: flex;
+    margin-bottom: 2rem;
 }
 
 .campo__label{
     padding-right: 2rem;
-}
 
+}
 .campo__field{
 
 }
+
 
 @media (min-width: 768px){
     .barra{
@@ -211,23 +208,23 @@ img{
         align-items: center;
         justify-content: space-between;
     }
-   
     .navegacion{
         display: flex;
         gap: 2rem;
-
     }
+
     .header__texto{
-        margin-top: 10rem;
+        margin-top:10rem;
     }
-
     .contenido-principal{
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
 
-    .boton{
+    .boton {
         display: inline-block;
+
     }
+
 }
